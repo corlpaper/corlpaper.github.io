@@ -1,99 +1,201 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>UMI-on-Legs: Making Manipulation Policies Mobile with a Manipulation-Centric Whole-body Controller</title>
 </head>
+
 <body>
-  <h1>UMI-on-Legs: Making Manipulation Policies Mobile with a Manipulation-Centric Whole-body Controller</h1>
-  <h1>Supplementary Video</h1>
-  <video width="1280" height="720" controls>
-    <source src="videos/compressed_supp_video.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  
-  <h1>Experiment Videos</h1>
+  <!-- text color is magenta for rebuttal -->
+  <section style="color : magenta;">
+    <h1 color="">UMI-on-Legs: Making Manipulation Policies Mobile with a Manipulation-Centric Whole-body Controller
+      Rebuttal</h1>
 
-  <h2>Tossing Evaluation</h2>
-  <h3>End Effector Trajectory Replay with Motion Capture</h3>
-  <video width="640" height="360" controls>
-    <source src="videos/eval_videos/tossing replay mocap noaudio.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <h3>Diffusion Policy with Motion Capture</h3>
-  <video width="640" height="360" controls>
-    <source src="videos/eval_videos/tossing policy mocap noaudio.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <h3>Diffusion Policy with iPhone VIO</h3>
-  <video width="640" height="360" controls>
-    <source src="videos/eval_videos/tossing policy iphone noaudio.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
 
-  <h2>Pushing Evaluation</h2>
-  <h3>Diffusion Policy with Motion Capture (10lbs)</h3>
-  <video width="640" height="360" controls>
-    <source src="videos/eval_videos/pushing 10lbs mocap noaudio 20episodes episode9 explanation.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+    <h2>All In-the-wild Cup Rearrangement Rollouts with OOD deformable terrains</h2>
+    <b>
+      NOTE: this result was present in the original supplementary material below in a grid video.
+      We reproduce the video here with labelled (success/failure) rollouts attached end-to-end.
+      These videos are 1x speed.
+    </b>
+    <br>
 
-  <h3>Diffusion Policy with iPhone VIO (10lbs)</h3>
-  <video width="640" height="360" controls>
-    <source src="videos/eval_videos/pushing 10lbs iphone noaudio 20episodes.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+    Each trial ends with a colored bounding box.
+    47 trials in total, with 27 successful trials (green bounding box).
+    2 trials with systems failures (grey bounding box) were omitted from the final quantitative evaluation, giving 27/45
+    successful trials.
+    13 trials with manipulation failures (yellow bounding box), and 5 trials with controller failures (red bounding
+    box).<br>
+    We've compressed this 24 minute long video such that it can fit onto a Github repository.
+    The original high resolution video will be released upon acceptance.
+    <br>
 
-  <h3>Diffusion Policy with iPhone VIO (20lbs)</h3>
-  <video width="640" height="360" controls>
-    <source src="videos/eval_videos/pushing 20lbs iphone noaudio.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  
-  <h2>Cup Rearrangement Evaluation</h2>
-  <h3>Diffusion Policy with Motion Capture</h3>
-  <video width="640" height="360" controls>
-    <source src="videos/eval_videos/cup mocap noaudio.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+    <video width="640" height="360" controls autoplay>
+      <source src="videos/cup_in_the_wild_rollouts_small_360p.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
 
-  <h3>Diffusion Policy with iPhone VIO</h3>
-  <video width="640" height="360" controls>
-    <source src="videos/eval_videos/cup iphone noaudio 20 episodes.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+    <h2>Walk and Toss over Rough Terrain Demo</h2>
+    Initial state is randomized over 50cmx50cm area and 90 degrees of z-orientation.
+    <br>
 
-  <h2>Perturbation with Task Space Tracking (iPhone VIO)</h2>
-  <video width="1280" height="720" controls>
-    <source src="videos/eval_videos/cup_taskspace_stabilization.mp4" type="video/mp4">
-    Your browser does not support the video tag.  
-  </video>
+    <video width="640" height="360" controls autoplay>
+      <source src="videos/walk_and_toss/000.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video width="640" height="360" controls autoplay>
+      <source src="videos/walk_and_toss/001.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video width="640" height="360" controls autoplay>
+      <source src="videos/walk_and_toss/002.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video width="640" height="360" controls autoplay>
+      <source src="videos/walk_and_toss/005.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video width="640" height="360" controls autoplay>
+      <source src="videos/walk_and_toss/007.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video width="640" height="360" controls autoplay>
+      <source src="videos/walk_and_toss/008.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video width="640" height="360" controls autoplay>
+      <source src="videos/walk_and_toss/010.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video width="640" height="360" controls autoplay>
+      <source src="videos/walk_and_toss/012.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video width="640" height="360" controls autoplay>
+      <source src="videos/walk_and_toss/016.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video width="640" height="360" controls autoplay>
+      <source src="videos/walk_and_toss/019.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video width="640" height="360" controls autoplay>
+      <source src="videos/walk_and_toss/024.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
 
-  <h2>In-the-wild Demo with iPhone VIO</h2>
-  <video width="1280" height="720" controls>
-    <source src="videos/eval_videos/cup_in_the_wild.m4v" type="video/mp4">
-    Your browser does not support the video tag.  
-  </video>
 
-  <h1>Failure Cases</h1>
-  <video width="1280" height="720" controls>
-    <source src="videos/failure_cases/falls.m4v" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <video width="1280" height="720" controls>
-    <source src="videos/failure_cases/shakes.m4v" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <video width="1280" height="720" controls>
-    <source src="videos/failure_cases/pick_and_place.m4v" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <video width="1280" height="720" controls>
-    <source src="videos/failure_cases/tossing_misses.m4v" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <video width="1280" height="720" controls>
-    <source src="videos/failure_cases/overheat_and_overcurrent.m4v" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+
+    <!-- add dividing line -->
+    <hr>
+  </section>
+
+  <section>
+
+
+
+    <h1>UMI-on-Legs: Making Manipulation Policies Mobile with a Manipulation-Centric Whole-body Controller</h1>
+    <h1>Supplementary Video</h1>
+    <video width="1280" height="720" controls>
+      <source src="videos/compressed_supp_video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <h1>Experiment Videos</h1>
+
+    <h2>Tossing Evaluation</h2>
+    <h3>End Effector Trajectory Replay with Motion Capture</h3>
+    <video width="640" height="360" controls>
+      <source src="videos/eval_videos/tossing replay mocap noaudio.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <h3>Diffusion Policy with Motion Capture</h3>
+    <video width="640" height="360" controls>
+      <source src="videos/eval_videos/tossing policy mocap noaudio.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <h3>Diffusion Policy with iPhone VIO</h3>
+    <video width="640" height="360" controls>
+      <source src="videos/eval_videos/tossing policy iphone noaudio.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <h2>Pushing Evaluation</h2>
+    <h3>Diffusion Policy with Motion Capture (10lbs)</h3>
+    <video width="640" height="360" controls>
+      <source src="videos/eval_videos/pushing 10lbs mocap noaudio 20episodes episode9 explanation.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <h3>Diffusion Policy with iPhone VIO (10lbs)</h3>
+    <video width="640" height="360" controls>
+      <source src="videos/eval_videos/pushing 10lbs iphone noaudio 20episodes.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <h3>Diffusion Policy with iPhone VIO (20lbs)</h3>
+    <video width="640" height="360" controls>
+      <source src="videos/eval_videos/pushing 20lbs iphone noaudio.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <h2>Cup Rearrangement Evaluation</h2>
+    <h3>Diffusion Policy with Motion Capture</h3>
+    <video width="640" height="360" controls>
+      <source src="videos/eval_videos/cup mocap noaudio.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <h3>Diffusion Policy with iPhone VIO</h3>
+    <video width="640" height="360" controls>
+      <source src="videos/eval_videos/cup iphone noaudio 20 episodes.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <h2>Perturbation with Task Space Tracking (iPhone VIO)</h2>
+    <video width="1280" height="720" controls>
+      <source src="videos/eval_videos/cup_taskspace_stabilization.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <video width="1280" height="720" controls>
+      <source src="videos/tracking/taskspace.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video width="1280" height="720" controls>
+      <source src="videos/tracking/taskspace_fountain_blurred.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <h2>In-the-wild Demo with iPhone VIO</h2>
+    <video width="1280" height="720" controls>
+      <source src="videos/eval_videos/cup_in_the_wild.m4v" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <h1>Failure Cases</h1>
+    <video width="1280" height="720" controls>
+      <source src="videos/failure_cases/falls.m4v" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video width="1280" height="720" controls>
+      <source src="videos/failure_cases/shakes.m4v" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video width="1280" height="720" controls>
+      <source src="videos/failure_cases/pick_and_place.m4v" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video width="1280" height="720" controls>
+      <source src="videos/failure_cases/tossing_misses.m4v" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video width="1280" height="720" controls>
+      <source src="videos/failure_cases/overheat_and_overcurrent.m4v" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
 </body>
+
 </html>
